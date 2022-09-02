@@ -1,0 +1,29 @@
+body{font-size: 14px;
+    font-family: 'Poppins', 'orelo-wide', 'orelo-demibold', 'orelo-bold', sans-serif;
+    color: #1a1a1a;
+    background: #f7f7f7;
+    overflow-x: hidden; 
+    &.active{overflow: hidden;}
+}
+
+.blind{position: absolute;
+    width: 1px; height: 1px; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    margin: -1px;}
+
+
+
+/* mouse */
+.mouse{ 
+    position: fixed;
+    top: 0; left: 0; 
+    width: 60px; height: 60px;
+    border: 1px solid #1a1a1a;
+    border-radius: 50%;
+    z-index: 99;
+    pointer-events: none; 
+}
+
+
+
