@@ -106,6 +106,7 @@ $(function(){
   })
 
   $('.exp-tab a').click(function(e){ 
+    e.preventDefault(); 
     idx=$(this).index(); //함께 넘어감
     expSlide.slideTo(idx)
   })
