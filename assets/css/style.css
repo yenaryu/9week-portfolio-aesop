@@ -871,6 +871,9 @@ body.active {
   padding: 10px 0;
   font-size: 18px;
 }
+.group-header .mid-area .link-nav:hover {
+  opacity: 0.7;
+}
 .group-header .mid-area .link-nav.left {
   justify-content: flex-end;
 }
@@ -985,6 +988,9 @@ body.active {
   line-height: 24px;
   text-transform: uppercase;
 }
+.group-menu .group-header .left-area .text:hover {
+  opacity: 0.7;
+}
 .group-menu .group-header .left-area .shop-icon {
   border: 1px solid #f7f7f7;
 }
@@ -1006,6 +1012,9 @@ body.active {
   color: #f7f7f7;
   font-family: "orelo-demibold";
 }
+.group-menu .menu-list .menu-item .menu-txt:hover {
+  opacity: 0.7;
+}
 .group-menu .info-area {
   padding: 30px 0;
 }
@@ -1023,6 +1032,9 @@ body.active {
   line-height: 24px;
   text-transform: uppercase;
   color: #f7f7f7;
+}
+.group-menu .info-list .info-item:hover {
+  font-size: 16px;
 }
 .group-menu .sns-area {
   display: flex;
@@ -1179,6 +1191,9 @@ body.active {
   line-height: 20px;
   font-weight: 400;
 }
+.group-shop .shop-bottom .btn:hover {
+  background: #e2e2e2;
+}
 .group-shop .shop-bottom .btn-pay {
   width: 100%;
   text-align: center;
@@ -1191,6 +1206,9 @@ body.active {
   padding: 30px 45px;
   font-size: 16px;
   line-height: 23px;
+}
+.group-shop .shop-bottom .btn-pay:hover {
+  opacity: 0.9;
 }
 .group-shop .shop-bottom .link-more {
   text-transform: uppercase;
@@ -1287,6 +1305,10 @@ body.active {
   width: 22.5%;
   padding-top: 22.5%;
 }
+.footer-bottom .img-area .img-box:hover {
+  width: 30%;
+  transition: all ease-in-out 1s;
+}
 .footer-bottom .img-area .img-box img {
   position: absolute;
   top: 0;
@@ -1311,7 +1333,7 @@ body.active {
 .footer-bottom .group-email .btn-area {
   margin-bottom: 120px;
   display: flex;
-  padding: 0 570px;
+  justify-content: center;
 }
 .footer-bottom .group-email .btn-area form {
   display: flex;
@@ -1357,6 +1379,9 @@ body.active {
   font-size: 14px;
   line-height: 21px;
 }
+.footer-bottom .group-info .info-area .text:hover {
+  opacity: 0.8;
+}
 .footer-bottom .group-info .info-area .info-box {
   display: flex;
   order: 2;
@@ -1368,6 +1393,9 @@ body.active {
   font-size: 14px;
   line-height: 21px;
   justify-content: space-between;
+}
+.footer-bottom .group-info .info-area .info-box .text:hover {
+  opacity: 0.8;
 }
 .footer-bottom .group-info .info-area .sns-box {
   order: 3;
@@ -1386,6 +1414,9 @@ body.active {
 }
 .footer-bottom .group-info .info-area .sns-box .link-sns svg path {
   fill: #f7f7f7;
+}
+.footer-bottom .group-info .info-area .sns-box .link-sns svg:hover {
+  opacity: 0.8;
 }
 .footer-bottom .group-info .copyright {
   padding-bottom: 60px;
@@ -1421,8 +1452,8 @@ body.active {
 }
 .menu-notify .pop {
   opacity: 0;
-  padding: 40px 50px;
-  width: 480px;
+  padding: 40px 25px;
+  width: 250px;
   position: absolute;
   bottom: 50px;
   right: 0px;
@@ -1434,13 +1465,13 @@ body.active {
   transition: all 0.5s ease-out;
 }
 .menu-notify .pop .title {
-  font-size: 30px;
-  line-height: 35px;
+  font-size: 25px;
+  line-height: 28px;
   font-family: "orelo-demibold";
 }
 .menu-notify .pop .desc {
-  padding: 30px 0;
-  font-size: 16px;
+  padding: 25px 0;
+  font-size: 13px;
   line-height: 23px;
   font-weight: 400;
 }
@@ -1449,7 +1480,7 @@ body.active {
   font-weight: 700;
   cursor: none;
   position: relative;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 21px;
 }
 
@@ -1481,7 +1512,7 @@ body.active {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: normal;
-  font-size: 130px;
+  font-size: clamp(50px, 9vw, 130px);
   line-height: 130px;
   margin: auto;
   font-family: "orelo-wide";
@@ -1567,8 +1598,11 @@ body.active {
   flex-direction: column;
 }
 .sc-prd .prd-area img {
-  width: 350px;
-  height: 430px;
+  height: 350px;
+}
+.sc-prd .prd-area img:hover {
+  transition: all ease-in-out 0.3s;
+  height: 370px;
 }
 .sc-prd .prd-area .prd-txt {
   text-align: center;
@@ -1606,6 +1640,9 @@ body.active {
   border-radius: 40px;
   text-transform: uppercase;
   margin: 0 auto;
+}
+.sc-prd .prd-shop:hover {
+  background: #e2e2e2;
 }
 .sc-prd .prd-shop .shop-img {
   margin-right: 10px;
@@ -1678,7 +1715,8 @@ body.active {
   text-transform: uppercase;
   padding-top: 40px;
   cursor: none;
-  margin-left: 158px;
+  display: flex;
+  justify-content: center;
 }
 .sc-use .use-area .use-txt .use-desc {
   font-size: 18px;
@@ -1699,6 +1737,9 @@ body.active {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+.sc-use .btn-use:hover {
+  opacity: 0.8;
 }
 .sc-use .btn-use .link-more {
   font-weight: 700;
@@ -1752,6 +1793,10 @@ body.active {
   letter-spacing: normal;
   font-size: 14px;
   line-height: 21px;
+}
+.sc-exp .btn-exp .link-more .link-txt:hover {
+  font-size: 16px;
+  transition: all ease-in-out 0.5s;
 }
 .sc-exp .btn-exp .link-more .link-icon {
   width: 12px;

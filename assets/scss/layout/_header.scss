@@ -66,6 +66,8 @@
             padding: 10px 0;
             font-size: 18px;
 
+            &:hover{opacity: 0.7;}
+
             &.left{justify-content: flex-end;}
             &.right{justify-content: flex-start;}
         }
@@ -178,6 +180,7 @@
                 font-size: 14px;
                 line-height: 24px;
                 text-transform: uppercase;
+                &:hover{opacity: 0.7;}
             }
 
             .shop-icon{
@@ -210,6 +213,7 @@
                 text-transform: uppercase;
                 color: #f7f7f7;
                 font-family: 'orelo-demibold';
+                &:hover{opacity: 0.7;}
             }
         }
     }
@@ -233,6 +237,7 @@
             line-height: 24px;
             text-transform: uppercase;
             color: #f7f7f7;
+            &:hover{font-size: 16px;}
 
             
         }
@@ -348,7 +353,8 @@
             text-align: center;
             font-weight: 700;
             font-size: 13px;
-            line-height: 20px;}
+            line-height: 20px;
+        }
 
         .recommend{
         display: flex;
@@ -386,7 +392,10 @@
             text-transform: none;
             font-size: 12px;
             line-height: 20px;
-            font-weight: 400;}
+            font-weight: 400;
+            &:hover{background: #e2e2e2;}
+        
+        }
         .btn-pay{    
             width: 100%;
             text-align: center;
@@ -398,7 +407,9 @@
             color: #f7f7f7;
             padding: 30px 45px;
             font-size: 16px;
-            line-height: 23px;  
+            line-height: 23px;
+            &:hover{opacity: .9;}
+
         }
 
         .link-more{

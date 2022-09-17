@@ -29,7 +29,7 @@
             text-transform: uppercase;
             font-weight: 600;
             letter-spacing: normal; 
-            font-size: 130px;
+            font-size: clamp(50px, 9vw, 130px);
             line-height: 130px;
             margin:auto;
             font-family: 'orelo-wide';
@@ -114,8 +114,13 @@
     .prd-area{
     flex-direction: column;
 
-        img{width: 350px;
-            height: 430px;}
+        img{
+            height: 350px;
+            &:hover{
+                transition:all ease-in-out .3s;
+                height: 370px;}
+        
+        }
 
         .prd-txt{text-align: center;
             padding-top: 20px;
@@ -155,6 +160,7 @@
         border-radius: 40px;
         text-transform: uppercase;
         margin: 0 auto;
+        &:hover{background: #e2e2e2;}
 
         .shop-img{    
             margin-right: 10px;
@@ -225,7 +231,8 @@
             text-transform: uppercase;
             padding-top: 40px;
             cursor: none;
-            margin-left: 158px;
+            display: flex;
+            justify-content: center;
             .use-desc{font-size: 18px;
                 color: #1a1a1a;
                 line-height: 23px;}
@@ -246,6 +253,8 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+
+        &:hover{opacity:.8}
 
         .link-more{font-weight: 700;
             letter-spacing: normal;
@@ -305,7 +314,10 @@
                 font-weight: 700;
                 letter-spacing: normal;
                 font-size: 14px;
-                line-height: 21px;}
+                line-height: 21px;
+                &:hover{font-size: 16px;
+                    transition:all ease-in-out .5s;}
+            }
                 
             .link-icon{width: 12px;
                 height: 12px;
