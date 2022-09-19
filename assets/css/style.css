@@ -1509,16 +1509,16 @@ body.active {
   transform: translate(-50%, -50%);
   overflow: hidden;
 }
-.loading .load-img .img-box.vid {
-  z-index: 20;
-}
 .loading .load-img .img-box.load1 {
-  z-index: 10;
+  z-index: 4;
 }
 .loading .load-img .img-box.load2 {
-  z-index: 5;
+  z-index: 3;
 }
 .loading .load-img .img-box.load3 {
+  z-index: 2;
+}
+.loading .load-img .img-box.load4 {
   z-index: 1;
 }
 .loading .load-img img {
