@@ -1,20 +1,34 @@
 $(function(){
 
+    /* @@@@@@@@@@@@@@@@@@@@ loading @@@@@@@@@@@@@@@@@@@ */
+    const loadAni = gsap.timeline({})
+    loadAni.addLabel('a')
+    loadAni.to('.loading',{opacity:0, display:'none', yPercent:0, delay:3},'a')
+    .to('.loading .vid',{opacity:0, display:'none', xPercent:0, delay:1.5,},'a')
+    .to('.loading .load1',{opacity:0, display:'none', xPercent:0,delay:2,},'a')
+    .to('.loading .load2',{opacity:0, display:'none', xPercent:0,delay:2.5,},'a')
+    .to('.loading .load3',{opacity:0, display:'none', yPercent:0,delay:3,},'a')
+    .addLabel('b')
+    .from('.sc-main .title-area .word',{yPercent:100, stagger:0.2,},'b')
+    .from('.sc-main .title-area .desc',{yPercent:100,stagger:0.2},'b')
+    // .to('.sc-home .link-btn',{duration:0.7,opacity:1},'b-=0.4')
+    // .from('.sc-home .home-logo-area .char',{opacity:0,stagger:0.2,duration:0.9,yPercent:103},'b-=0.4')
+
 
     /* @@@@@@@@@@@@@@@@@@@@ main @@@@@@@@@@@@@@@@@@@ */
 
     //main 메인 글자 움직이기 (title->desc)
-    intro = gsap.timeline({})//timeline으로 모션연결
+    // intro = gsap.timeline({})//timeline으로 모션연결
 
-    intro.fromTo('.sc-main .title-area .word',{
-        yPercent:100//100까지
-    },{
-        yPercent:0, //0부터
-        stagger:0.2 //순차적으로
-    })
-    .from('.sc-main .title-area .desc',{
-        opacity:0
-    })
+    // intro.fromTo('.sc-main .title-area .word',{
+    //     yPercent:100//100까지
+    // },{
+    //     yPercent:0, //0부터
+    //     stagger:0.2 //순차적으로
+    // })
+    // .from('.sc-main .title-area .desc',{
+    //     opacity:0
+    // })
 
 
 

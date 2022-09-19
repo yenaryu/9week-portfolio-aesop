@@ -75,8 +75,8 @@
          overflow: hidden;
          width: 22.5%;
      padding-top: 22.5%;
-     &:hover{width: 30%; 
-        transition:all ease-in-out 1s;}
+     transition:all ease-in-out 1s;
+     &:hover{width: 30%;}
     
          img{position: absolute;
              top: 0;

@@ -1,3 +1,34 @@
+.loading{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: #b9a69d;
+    z-index: 500;
+
+    .load-img{
+        display: flex;
+        flex-direction: column;
+        
+        .img-box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            overflow: hidden;
+
+            &.vid{z-index: 20;}
+            &.load1{z-index: 10;}
+            &.load2{z-index: 5;}
+            &.load3{z-index: 1;}
+        }
+
+        img{width: 500px; height: 280px; border-radius: 10px;}
+        video{width: 500px; height: auto; border-radius: 10px;}
+    }
+}
+
+
+
 .container{    
     width: 100%;
     margin: auto;
@@ -116,8 +147,8 @@
 
         img{
             height: 350px;
+            transition:all ease-in-out .3s;
             &:hover{
-                transition:all ease-in-out .3s;
                 height: 370px;}
         
         }

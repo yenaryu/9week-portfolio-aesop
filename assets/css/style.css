@@ -802,6 +802,10 @@ body.active {
   margin: -1px;
 }
 
+.wrapper {
+  min-width: 1190px;
+}
+
 /* mouse */
 .mouse {
   position: fixed;
@@ -1305,10 +1309,10 @@ body.active {
   overflow: hidden;
   width: 22.5%;
   padding-top: 22.5%;
+  transition: all ease-in-out 1s;
 }
 .footer-bottom .img-area .img-box:hover {
   width: 30%;
-  transition: all ease-in-out 1s;
 }
 .footer-bottom .img-area .img-box img {
   position: absolute;
@@ -1485,6 +1489,49 @@ body.active {
   line-height: 21px;
 }
 
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #b9a69d;
+  z-index: 500;
+}
+.loading .load-img {
+  display: flex;
+  flex-direction: column;
+}
+.loading .load-img .img-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.loading .load-img .img-box.vid {
+  z-index: 20;
+}
+.loading .load-img .img-box.load1 {
+  z-index: 10;
+}
+.loading .load-img .img-box.load2 {
+  z-index: 5;
+}
+.loading .load-img .img-box.load3 {
+  z-index: 1;
+}
+.loading .load-img img {
+  width: 500px;
+  height: 280px;
+  border-radius: 10px;
+}
+.loading .load-img video {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
 .container {
   width: 100%;
   margin: auto;
@@ -1600,9 +1647,9 @@ body.active {
 }
 .sc-prd .prd-area img {
   height: 350px;
+  transition: all ease-in-out 0.3s;
 }
 .sc-prd .prd-area img:hover {
-  transition: all ease-in-out 0.3s;
   height: 370px;
 }
 .sc-prd .prd-area .prd-txt {
